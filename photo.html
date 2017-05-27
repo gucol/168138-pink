@@ -10,7 +10,7 @@
             <img src="http://placehold.it/150x100" alt="Логотип проекта Pink">
         </a>
         <nav class="main-nav main-nav--open">
-            <span class="main-nav__toggler">Открыть меню</span>
+            <button class="main-nav__toggler">Открыть меню</button>
             <ul class="main-nav__list">
                 <li class="main-nav__item"><a href="index.html">Главная</a></li>
                 <li class="main-nav__item"><a>Фотографии</a></li>
@@ -104,20 +104,18 @@
       <section class="upload">
         <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
           <img src="http://placehold.it/375x280" alt="Загружаемое изображение" class="upload__img">
-          <fieldset class="upload__editor">
-            <legend class="upload__editor-title upload__editor-title--crop">Обрезать</legend>
-            <input class="upload__range" type="range" min="1" max="10">
-          </fieldset>
-          <fieldset class="upload__editor">
-            <legend class="upload__editor-title upload__editor-title--fill">Залить</legend>
-            <input class="upload__range upload__range--hidden" type="range" min="1" max="10">
-          </fieldset>
-          <fieldset class="upload__editor">
-            <legend class="upload__editor-title upload__editor-title--contrast">Изменить контраст</legend>
-            <input class="upload__range upload__range--hidden" type="range" min="1" max="10">
-          </fieldset>
-          <input type="submit" class="upload-btn" value="Запостить">
-          <input type="reset" class="cancel-btn" value="Отмена">
+
+          <button type="button" class="upload__change upload__change--crop">Обрезать</button>
+          <input class="upload__range" type="range" min="1" max="10">
+
+          <button type="button" class="upload__change upload__change--fill">Залить</button>
+          <input class="upload__range upload__range--hidden" type="range" min="1" max="10">
+
+          <button type="button" class="upload__change upload__change--contrast">Изменить контраст</button>
+          <input class="upload__range upload__range--hidden" type="range" min="1" max="10">
+
+          <input type="submit" class="upload-input" value="Запостить">
+          <input type="reset" class="cancel-input" value="Отмена">
         </form>
       </section>
 
