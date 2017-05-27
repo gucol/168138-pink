@@ -101,7 +101,25 @@
       <p class="page-main__text">Затмите их всех!</p>
       <p class="page-main__text">Выкладывайте все, что накопилось в телефоне!</p>
 
-      <section class="upload"></section>
+      <section class="upload">
+        <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
+          <img src="http://placehold.it/375x280" alt="Загружаемое изображение" class="upload__img">
+          <fieldset class="upload__editor">
+            <legend class="upload__editor-title upload__editor-title--crop">Обрезать</legend>
+            <input class="upload__range" type="range" min="1" max="10">
+          </fieldset>
+          <fieldset class="upload__editor">
+            <legend class="upload__editor-title upload__editor-title--fill">Залить</legend>
+            <input class="upload__range upload__range--hidden" type="range" min="1" max="10">
+          </fieldset>
+          <fieldset class="upload__editor">
+            <legend class="upload__editor-title upload__editor-title--contrast">Изменить контраст</legend>
+            <input class="upload__range upload__range--hidden" type="range" min="1" max="10">
+          </fieldset>
+          <input type="submit" class="upload-btn" value="Запостить">
+          <input type="reset" class="cancel-btn" value="Отмена">
+        </form>
+      </section>
 
     </main>
     <footer class="page-footer">
