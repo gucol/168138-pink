@@ -6,70 +6,77 @@
   </head>
   <body>
     <header class="page-header">
-        <!-- не забыть скрыть -->
-        <h1 class="page-header__title">Приложение "Pink" - звезда на рынке приложений</h1>
+        <h1 class="page-header__title page-header__title--hidden">Приложение "Pink" - звезда на рынке приложений</h1>
         <div class="page-header__logo">
             <img src="http://placehold.it/150x100" alt="Логотип проекта Pink">
         </div>
-        <nav class="main-nav">  <!-- main-nav--open для открытия меню через js -->
+        <nav class="main-nav main-nav--open">
             <button class="main-nav__toggler">Открыть меню</button>
             <ul class="main-nav__list">
                 <li class="main-nav__item"><a>Главная</a></li>
                 <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
                 <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-                <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+                <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="page-main">
-        <section class="supply">
-            <h2 class="supply__title">Скачайте наше приложение:</h2>
-            <img src="http://placehold.it/150x100" alt="Превью приложения" class="supply__img">
-            <a href="#" class="supply__button">Скачать приложение</a>
-            <a href="#" class="supply__icon">Скачать приложение для iOS</a>
-            <a href="#" class="supply__icon">Скачать приложение для Android</a>
-            <a href="#" class="supply__icon">Скачать приложение для Windows</a>
-            <p class="supply__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <section class="downloads">
+            <h2 class="downloads__title downloads__title--hidden">Скачайте наше приложение:</h2>
+            <img src="http://placehold.it/150x100" alt="Превью приложения" class="downloads__img">
+            <a href="#" class="downloads__button">Скачать приложение</a>
+            <a href="#" class="downloads__icon">Скачать приложение для iOS</a>
+            <a href="#" class="downloads__icon">Скачать приложение для Android</a>
+            <a href="#" class="downloads__icon">Скачать приложение для Windows</a>
+            <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </section>
 
         <section class="features">
-          <h2 class="features__title">Преимущества нашего предложения:</h2>
+          <h2 class="features__title features__title--hidden">Преимущества нашего предложения:</h2>
           <div class="features__slogan">
             <span>Устали от серости мегаполиса?</span>
             <span>Нам есть, что вам предложить!</span>
           </div>
-          <h3 class="features__subtitle">Поднимает настроение</h3>
-          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          <h3 class="features__subtitle">Меняет мир вокруг</h3>
-          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          <h3 class="features__subtitle">Заводит новых друзей</h3>
-          <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__subtitle">Поднимает настроение</h3>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__subtitle">Меняет мир вокруг</h3>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__subtitle">Заводит новых друзей</h3>
+              <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
         </section>
 
         <section class="reviews">
-            <div class="reviews__wrapper slader">
-              <h2 class="reviews__title">Отзывы:</h2>
+            <div class="reviews__inner slider">
+              <h2 class="reviews__title reviews__title--hidden">Отзывы:</h2>
               <ul class="reviews__list slider__wrapper">
                 <li class="reviews__item slider__item">
                   <h3 class="reviews__item-name">Николай Петров</h3>
                   <blockquote class="reviews__item-quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                 </li>
-                <li class="reviews__item slider__item">
-                  <h3 class="reviews__item-name"></h3>
-                  <blockquote class="reviews__item-quote"></blockquote>
+                <li class="reviews__item reviews__item--hidden slider__item">
+                  <h3 class="reviews__item-name">Василий Петечкин</h3>
+                  <blockquote class="reviews__item-quote">«Даешь дурацкие приложения!»</blockquote>
                 </li>
-                <li class="reviews__item slider__item">
-                  <h3 class="reviews__item-name"></h3>
-                  <blockquote class="reviews__item-quote"></blockquote>
+                <li class="reviews__item reviews__item--hidden slider__item">
+                  <h3 class="reviews__item-name">Марфа Расторгуева</h3>
+                  <blockquote class="reviews__item-quote">«У нас на селе такого нет!»</blockquote>
                 </li>
               </ul>
             </div>
         </section>
 
         <section class="tariffs">
-          <div class="tariffs__wrapper slader">
-            <h2 class="tariffs__title">Наши цены</h2>
+          <div class="tariffs__inner slider">
+            <h2 class="tariffs__title tariffs__title--hidden">Наши цены</h2>
             <ul class="slider__wrapper">
               <li class="slider__item">
                 <div class="tariff">
@@ -109,9 +116,9 @@
         </section>
 
         <section class="contacts">
-          <div class="contact-block">
-            <h2 class="contact-block__title">Остались вопросы? Свяжитесь с нами!</h2>
-            <table class="contact-block__table">
+          <div class="contacts-block">
+            <h2 class="contacts-block__title">Остались вопросы? Свяжитесь с нами!</h2>
+            <table class="contacts-block__table">
               <tr>
                 <td>Звоните:</td>
                 <td>+7 (812) 555-66-66</td>
@@ -129,11 +136,12 @@
         </section>
     </main>
 
-    <footer class="page-footer page-footer--close">
+    <footer class="page-footer">
       <a class="page-footer__logo">
         <img src="http://placehold.it/150x100" alt="Логотип проекта Pink">
       </a>
       <section class="social-links">
+        <h2 class="social-links__title social-links__title--hidden">Напишите нам в социальные сети</h2>
         <a href="#" class="social-link social-link--inst">instagram</a>
         <a href="#" class="social-link social-link--fb">facebook</a>
         <a href="#" class="social-link social-link--tw">twitter</a>
