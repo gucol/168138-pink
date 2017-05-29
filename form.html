@@ -24,8 +24,8 @@
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
-      <form class="page-form" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="page-form__title page-form__title--hidden">Заполните форму для участия в конкурсе</h2>
+      <form class="forms-contest" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="forms-contest__title forms-contest__title--hidden">Заполните форму для участия в конкурсе</h2>
         <fieldset class="form-contest">
           <legend class="form-contest__legend form-contest__legend--hidden">Расскажите, как Вас зовут:</legend>
 
@@ -82,11 +82,13 @@
           <label for="windows-radio" class="form-contest__label">Windows Phone</label>
         </fieldset>
 
-        <label for="desc-field" class="page-form__label">Опишите свои эмоции</label>
-        <textarea class="page-form__textarea" name="desc" id="desc-field">Можно прям в красках, не стесняясь в выражениях</textarea>
+        <div class="form-contest">
+          <label for="desc-field" class="form-contest__label">Опишите свои эмоции</label>
+          <textarea class="form-contest__textarea" name="desc" id="desc-field">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </div>
 
         <input class="btn" type="submit" name="order" value="Отправить форму">
-        <p class="page-form__text">* - обязательные поля</p>
+        <p class="forms-contest__text">* - обязательные поля</p>
       </form>
     </main>
 
