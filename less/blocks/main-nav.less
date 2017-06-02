@@ -2,10 +2,16 @@
     background-color: #283645;
 }
 
+.main-nav__toggler {
+    float: left;
+}
+
 .main-nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    .list-reset();
+
+        &--close {
+        display: none;
+    }
 }
 
 .main-nav__item {
