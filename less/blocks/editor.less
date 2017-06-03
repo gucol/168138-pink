@@ -1,7 +1,16 @@
+.editor {
+    padding-bottom: 25px;
+}
+
 .editor__btn {
+    .visuallyhidden();
     font-size: 0;
 }
 
 .editor__range {
-    width: 100%;
+    min-width: 240px;
+
+    &--hidden {
+      .visuallyhidden();
+    }
 }
