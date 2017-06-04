@@ -23,14 +23,21 @@
     display: none;
 }
 
-.forms-contest__label,
-.forms-contest__label--textarea {
+.forms-contest__label {
     display: block;
     margin-left: 24px;
     margin-bottom: 15px;
     line-height: 30px;
     color: #d22856;
     text-transform: uppercase;
+    text-align: left;
+
+    &--textarea {
+        font-size: 14px;
+        color: #d22856;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
 
 .forms-contest__checkbox + .forms-contest__label,
@@ -43,14 +50,6 @@
     line-height: 30px;
     color: #283645;
     text-transform: inherit;
-}
-
-.forms-contest__label {
-    text-align: left;
-
-    &--textarea {
-    text-align: center;
-    }
 }
 
 .forms-contest__input {
@@ -69,11 +68,12 @@
     box-sizing: border-box;
     min-width: 280px;
     min-height: 200px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
     margin-bottom: 48px;
-    padding: 20px;
-    font-family: inherit;
+    padding: 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
     border: 2px solid #e5e5e5;
     border-radius: 3px;
 }
