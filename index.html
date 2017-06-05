@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initail-scale=1">
   </head>
   <body>
     <header class="page-header">
         <h1 class="page-header__title page-header__title--hidden">Приложение "Pink" - звезда на рынке приложений</h1>
         <div class="page-header__logo">
-            <img src="http://placehold.it/150x100" alt="Логотип проекта Pink">
+            <img src="img/" alt="Логотип проекта Pink">
         </div>
-        <nav class="main-nav main-nav--open">
+        <nav class="main-nav">
             <button class="main-nav__toggler">Открыть меню</button>
             <ul class="main-nav__list">
                 <li class="main-nav__item"><a>Главная</a></li>
@@ -24,8 +26,8 @@
     <main class="page-main">
         <section class="downloads">
             <h2 class="downloads__title downloads__title--hidden">Скачайте наше приложение:</h2>
-            <img src="http://placehold.it/150x100" alt="Превью приложения" class="downloads__img">
-            <a href="#" class="downloads__button">Скачать приложение</a>
+            <img src="img/iphone-hand-mobile@1x.png" alt="Превью приложения" class="downloads__img">
+            <a href="#" class="btn btn--download downloads__btn">Скачать приложение</a>
             <a href="#" class="downloads__icon">Скачать приложение для iOS</a>
             <a href="#" class="downloads__icon">Скачать приложение для Android</a>
             <a href="#" class="downloads__icon">Скачать приложение для Windows</a>
@@ -35,8 +37,8 @@
         <section class="features">
           <h2 class="features__title features__title--hidden">Преимущества нашего предложения:</h2>
           <div class="features__slogan">
-            <span>Устали от серости мегаполиса?</span>
-            <span>Нам есть, что вам предложить!</span>
+            <span class="features__slogan-text">Устали от серости мегаполиса?</span>
+            <span class="features__slogan-text">Нам есть, что вам предложить!</span>
           </div>
           <ul class="features__list">
             <li class="features__item">
@@ -75,61 +77,58 @@
         </section>
 
         <section class="tariffs">
-          <div class="tariffs__inner slider">
-            <h2 class="tariffs__title tariffs__title--hidden">Наши цены</h2>
-            <ul class="slider__wrapper">
-              <li class="slider__item">
-                <div class="tariff">
-                    <h3 class="tariff__title">База</h3>
-                    <p class="tariff__price">1,99 USD</p>
-                    <ul class="tariff__list">
-                      <li class="tariff__item">Розовый фильтр</li>
-                      <li class="tariff__item tariff__item--none">Смайлики</li>
-                      <li class="tariff__item tariff__item--none">Комментарии</li>
-                    </ul>
-                </div>
-              </li>
-              <li class="slider__item slider__item--active">
-                <div class="tariff">
-                  <h3 class="tariff__title">Стандарт</h3>
-                  <p class="tariff__price">3,99 USD</p>
-                  <ul class="tariff__list">
-                    <li class="tariff__item">Розовый фильтр</li>
-                    <li class="tariff__item">Смайлики</li>
-                    <li class="tariff__item tariff__item--none">Комментарии</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="slider__item">
-                <div class="tariff">
-                  <h3 class="tariff__title">Анлим</h3>
-                  <p class="tariff__price">3,99 USD</p>
-                  <ul class="tariff__list">
-                    <li class="tariff__item">Розовый фильтр</li>
-                    <li class="tariff__item">Смайлики</li>
-                    <li class="tariff__item">Комментарии</li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <h2 class="tariffs__title tariffs__title--hidden">Наши цены</h2>
+          <table class="tariffs__table">
+            <tr class="tariffs__row">
+              <th class="tariffs__title"></th>
+              <th class="tariffs__title">
+                  <p class="tariffs__name">База</p>
+                  <p class="tariffs__price">1,99 USD</p>
+              </th>
+              <th class="tariffs__title">
+                  <p class="tariffs__name">Стандарт</p>
+                  <p class="tariffs__price">3,99 USD</p>
+              </th>
+              <th class="tariffs__title">
+                  <p class="tariffs__name">Анлим</p>
+                  <p class="tariffs__price">3,99 USD</p>
+              </th>
+            </tr>
+            <tr class="tariffs__row">
+              <td class="tariffs__item">Розовый фильтр</td>
+              <td class="tariffs__item">Розовый фильтр</td>
+              <td class="tariffs__item">Розовый фильтр</td>
+              <td class="tariffs__item">Розовый фильтр</td>
+            </tr>
+            <tr class="tariffs__row">
+              <td class="tariffs__item">Смайлики</td>
+              <td class="tariffs__item">Смайлики</td>
+              <td class="tariffs__item">Смайлики</td>
+              <td class="tariffs__item">Смайлики</td>
+            </tr>
+            <tr class="tariffs__row">
+              <td class="tariffs__item">Комментарии</td>
+              <td class="tariffs__item">Комментарии</td>
+              <td class="tariffs__item">Комментарии</td>
+              <td class="tariffs__item">Комментарии</td>
+            </tr>
+          </table>
         </section>
-
         <section class="contacts">
           <div class="contacts__desc">
             <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
             <ul class="contacts__items">
               <li class="contacts__item">
-                <span class="contacts__text">Звоните:</span>
-                <span class="contacts__info">+7 (812) 555-66-66</span>
+                <div class="contacts__text">Звоните:</div>
+                <div class="contacts__info">+7 (812) 555-66-66</div>
               </li>
               <li class="contacts__item">
-                <span class="contacts__text">Пишите:</span>
-                <a href="mailto:mail@htmlacademy.ru" class="contacts__info">mail@htmlacademy.ru</a>
+                <div class="contacts__text">Пишите:</div>
+                <div class="contacts__info"><a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a></div>
               </li>
               <li class="contacts__item">
-                <span class="contacts__text">Приезжайте в гости:</span>
-                <span class="contacts__info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8</span>
+                <div class="contacts__text">Приезжайте в гости:</div>
+                <div class="contacts__info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8</div>
               </li>
             </ul>
           </div>
@@ -138,13 +137,13 @@
         </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <a class="page-footer__logo">
         <img src="http://placehold.it/150x100" alt="Логотип проекта Pink">
       </a>
       <section class="social-links">
         <h2 class="social-links__title social-links__title--hidden">Напишите нам в социальные сети</h2>
-        <a href="#" class="social-link social-link--inst">instagram</a>
+        <a href="#" class="social-link social-link--you">youtube</a>
         <a href="#" class="social-link social-link--fb">facebook</a>
         <a href="#" class="social-link social-link--tw">twitter</a>
       </section>
