@@ -27,3 +27,29 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: @desktop-widths) {
+    .main-nav {
+      float: right;
+      background-color: rgba(23, 31, 40, 0.3);
+    }
+
+    .main-nav__list {
+      display: table;
+      min-width: 645px;
+      text-align: center;
+    }
+
+    .main-nav__item {
+      display: table-cell;
+    }
+
+    .main-nav__item a {
+      text-transform: capitalize;
+      padding: 10px;
+    }
+
+    .main-nav__toggler {
+      display: none;
+    }
+}
