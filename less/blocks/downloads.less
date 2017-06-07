@@ -4,8 +4,15 @@
   background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -2%;
 }
 
-.downloads__title--hidden {
-  .visuallyhidden();
+.downloads__title {
+
+  &--hidden {
+    .visuallyhidden();
+    }
+}
+
+.downloads__slogan {
+  display: none;
 }
 
 .downloads__btn {
@@ -25,4 +32,24 @@
   font-weight: 300;
   font-size: 14px;
   color: #fff;
+}
+
+@media (min-width: @tablet-widths) {
+  .downloads {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .downloads__slogan {
+    display: block;
+    font-weight: 300;
+    font-size: 40px;
+    color: @white;
+  }
+}
+
+@media (min-width: @desktop-widths) {
+
 }
