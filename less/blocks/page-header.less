@@ -1,11 +1,23 @@
+.page-header {
+  .container();
+  .clearfix();
+}
+
 .page-header__title--hidden {
   .visuallyhidden();
 }
 
 .page-header__logo {
   float: left;
-}
+  padding: 20px 18px;
 
-@media (min-width: @desktop-widths) {
-    .container();
+  @media (min-width: @tablet-width) {
+    width: 150px;
+    height: 43px;
+    padding: 25px 20px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 6px 40px;
+  }
 }
