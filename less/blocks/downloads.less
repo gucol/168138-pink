@@ -1,7 +1,19 @@
 .downloads {
-  padding-top: 170px;
-  padding-bottom: 30px;
+  position: relative;
+  padding-top: 392px;
+  padding-bottom: 18px;
   background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -2%;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 103px;
+  }
 }
 
 .downloads__title {
@@ -13,12 +25,32 @@
 
 .downloads__slogan {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0;
+    padding: 0 30px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 25px;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .downloads__btn {
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 28px;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 27px 0 0;
+  }
 }
 
 .downloads__icon {
@@ -26,30 +58,56 @@
 }
 
 .downloads__text {
-  padding-top: 100px;
+  padding-top: 66px;
   padding-left: 44px;
   padding-right: 44px;
   font-weight: 300;
   font-size: 14px;
-  color: #fff;
-}
+  line-height: 24px;
+  color: @white;
 
-@media (min-width: @tablet-widths) {
-  .downloads {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0;
-    padding-bottom: 0;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 90px;
+    font-size: 18px;
+    letter-spacing: -0.7px;
   }
 
-  .downloads__slogan {
-    display: block;
-    font-weight: 300;
-    font-size: 40px;
-    color: @white;
+  @media (min-width: @desktop-width) {
+    padding-top: 130px;
   }
 }
 
-@media (min-width: @desktop-widths) {
+.downloads__img {
+  position: absolute;
+  top: 110px;
+  left: 0px;
 
+  @media (min-width: @tablet-width) {
+    top: 70px;
+    left: 178px;
+    min-width: 470px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 103px;
+    left: 384px;
+    min-width: 528px;
+  }
+}
+
+.downloads__inner {
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin-left: 20px;
+    padding-top: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+    padding-top: 112px;
+  }
 }
