@@ -7,7 +7,17 @@
     margin-bottom: 20px;
 
     &--panorama {
-      max-width: 660px;
+      max-width: 1200px;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 300px;
+    margin-bottom: 55px;
+
+    &--panorama {
+      max-width: 1200px;
       margin-bottom: 50px;
     }
   }
@@ -24,6 +34,10 @@
     height: 300px;
     margin: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }
 
 .post__panorama {
@@ -34,6 +48,11 @@
   @media (min-width: @tablet-width) {
     max-width: 660px;
     height: 510px
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    height: 505px
   }
 }
 
@@ -55,6 +74,20 @@
     &--panorama {
       max-width: 620px;
       padding: 21px 28px 13px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    min-width: 300px;
+    min-height: 156px;
+    padding: 21px 28px 13px;
+
+    &--panorama {
+      min-width: 948px;
+      min-height: 95px;
+      margin: 0 auto;
+      padding: 21px 28px 0px;
     }
   }
 }
