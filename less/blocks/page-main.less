@@ -14,9 +14,15 @@
   background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -2%;
 
   @media (min-width: @tablet-width) {
-    padding: 70px 10px 139px;
+    padding: 70px 20px 0px;
+    min-height: 259px;
     font-size: 50px;
     line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 70px 200px 0px;
+    min-height: 218px;
   }
 }
 
@@ -31,5 +37,9 @@
     padding: 75px 90px 57px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 75px 175px 70px;
   }
 }
