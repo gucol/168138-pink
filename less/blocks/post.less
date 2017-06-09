@@ -1,6 +1,16 @@
 .post {
   margin-bottom: 20px;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    max-width: 300px;
+    margin-bottom: 20px;
+
+    &--panorama {
+      max-width: 660px;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .post__img {
@@ -8,12 +18,23 @@
   display: block;
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 300px;
+    height: 300px;
+    margin: 0;
+  }
 }
 
 .post__panorama {
   max-width: 320px;
   display: block;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    max-width: 660px;
+    height: 510px
+  }
 }
 
 .post__desc {
@@ -23,12 +44,29 @@
   padding: 20px 20px 30px;
   background-color: #f2f2f2;
   color: #283645;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    max-width: 300px;
+    min-height: 83px;
+    margin: 0;
+    padding: 22px 28px 50px;
+
+    &--panorama {
+      max-width: 620px;
+      padding: 21px 28px 13px;
+    }
+  }
 }
 
 .post__user-name {
   margin-right: 5px;
   font-weight: 700;
   font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .post__time {
@@ -42,12 +80,29 @@
   text-align: left;
   font-weight: 400;
   font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .post__likes {
-  margin-left: 30px;
-  font-weight: 400;
-  font-size: 12px;
-  color: #d22856;
-  text-transform: uppercase;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #d22856;
+    text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 23px;
+    left: -2px;
+
+    &--panorama {
+      position: absolute;
+      top: 24px;
+      left: 458px;
+    }
+  }
 }
