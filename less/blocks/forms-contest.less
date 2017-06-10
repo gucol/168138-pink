@@ -77,6 +77,26 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
   border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1000px;
+  }
+}
+
+.forms-contest__inner {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    &:last-child {
+      order: 3;
+      justify-content: space-around;
+    }
+  }
 }
 
 .forms-contest__text {

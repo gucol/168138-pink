@@ -56,15 +56,18 @@
         <h2 class="forms-contest__title forms-contest__title--hidden">Заполните форму для участия в конкурсе</h2>
         <fieldset class="forms-contest__container">
           <legend class="forms-contest__legend forms-contest__legend--hidden">Расскажите, как Вас зовут:</legend>
-
-          <label for="surname-field" class="forms-contest__label">Фамилия:</label>
-          <input class="forms-contest__input" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
-
-          <label for="name-field" class="forms-contest__label">Имя:</label>
-          <input class="forms-contest__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
-
-          <label for="patronymic-field" class="forms-contest__label">Отчество:</label>
-          <input class="forms-contest__input" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+          <div class="forms-contest__inner">
+            <label for="surname-field" class="forms-contest__label">Фамилия:</label>
+            <input class="forms-contest__input" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
+          </div>
+          <div class="forms-contest__inner">
+            <label for="name-field" class="forms-contest__label">Имя:</label>
+            <input class="forms-contest__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
+          </div>
+          <div class="forms-contest__inner">
+            <label for="patronymic-field" class="forms-contest__label">Отчество:</label>
+            <input class="forms-contest__input" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+          </div>
         </fieldset>
 
         <fieldset class="forms-contest__container">
@@ -89,13 +92,17 @@
         </fieldset>
 
         <fieldset class="forms-contest__container">
-          <legend class="forms-contest__legend forms-contest__legend--hidden">Оставьте Ваши контактные данные:</legend>
+          <legend class="forms-contest__legend forms-contest__legend--hidden">Контактная информация</legend>
 
-          <label for="tel-field" class="forms-contest__label">Номер телефона</label>
-          <input class="forms-contest__input" type="tel" name="tel"  id="tel-field" placeholder="Номер, пожалуйста">
+          <div class="forms-contest__inner">
+            <label for="tel-field" class="forms-contest__label">Номер телефона</label>
+            <input class="forms-contest__input" type="tel" name="tel"  id="tel-field" placeholder="Номер, пожалуйста">
+          </div>
 
-          <label for="email-field" class="forms-contest__label">Адрес почты</label>
-          <input class="forms-contest__input" type="email" id="email-field" name="email" placeholder="Введите почту*" required>
+          <div class="forms-contest__inner">
+            <label for="email-field" class="forms-contest__label">Адрес почты</label>
+            <input class="forms-contest__input" type="email" id="email-field" name="email" placeholder="Введите почту*" required>
+          </div>
         </fieldset>
 
         <fieldset class="forms-contest__container">
@@ -115,8 +122,11 @@
           <textarea class="forms-contest__textarea" name="desc" placeholder="Можно прям в красках, не стесняясь в выражениях" id="desc-field"></textarea>
         </div>
 
-        <input class="btn btn--send forms-contest__btn" type="submit" name="order" value="Отправить форму">
-        <p class="forms-contest__text">* - обязательные поля</p>
+        <div class="forms-contest__inner">
+          <input class="btn btn--send forms-contest__btn" type="submit" name="order" value="Отправить форму">
+          <p class="forms-contest__text">* - обязательные поля</p>
+        </div>
+
       </form>
     </main>
 
