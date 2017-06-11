@@ -54,8 +54,9 @@
 
       <form class="forms-contest" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="forms-contest__title forms-contest__title--hidden">Заполните форму для участия в конкурсе</h2>
-        <fieldset class="forms-contest__container">
-          <legend class="forms-contest__legend forms-contest__legend--hidden">Расскажите, как Вас зовут:</legend>
+
+        <fieldset class="forms-contest__container forms-contest__container--name">
+          <legend class="forms-contest__legend forms-contest__legend--name">Расскажите, как Вас зовут:</legend>
           <div class="forms-contest__inner">
             <label for="surname-field" class="forms-contest__label">Фамилия:</label>
             <input class="forms-contest__input" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
@@ -70,8 +71,8 @@
           </div>
         </fieldset>
 
-        <fieldset class="forms-contest__container">
-          <legend class="forms-contest__legend">Ваши безбашенные достижения в путешествии</legend>
+        <fieldset class="forms-contest__container forms-contest__container--adventure">
+          <legend class="forms-contest__legend forms-contest__legend--adventure">Ваши безбашенные достижения в путешествии</legend>
           <input  class="forms-contest__checkbox forms-contest__checkbox--checked" type="checkbox" name="checkbox-form" value="shark-selfie" id="shark-selfie-check" checked>
           <label for="shark-selfie-check" class="forms-contest__label">Сделал селфи с акулой</label>
 
@@ -91,21 +92,21 @@
           <label for="rout-check" class="forms-contest__label">Разгромил отель</label>
         </fieldset>
 
-        <fieldset class="forms-contest__container">
-          <legend class="forms-contest__legend forms-contest__legend--hidden">Контактная информация</legend>
+        <fieldset class="forms-contest__container forms-contest__container--contacts">
+          <legend class="forms-contest__legend forms-contest__legend--contacts">Контактная информация</legend>
 
-          <div class="forms-contest__inner">
-            <label for="tel-field" class="forms-contest__label">Номер телефона</label>
-            <input class="forms-contest__input" type="tel" name="tel"  id="tel-field" placeholder="Номер, пожалуйста">
+          <div class="forms-contest__inner forms-contest__inner--contacts">
+            <label for="tel-field" class="forms-contest__label forms-contest__label--contacts">Номер телефона</label>
+            <input class="forms-contest__input forms-contest__input--contacts" type="tel" name="tel"  id="tel-field" placeholder="Номер, пожалуйста">
           </div>
 
-          <div class="forms-contest__inner">
-            <label for="email-field" class="forms-contest__label">Адрес почты</label>
-            <input class="forms-contest__input" type="email" id="email-field" name="email" placeholder="Введите почту*" required>
+          <div class="forms-contest__inner forms-contest__inner--contacts">
+            <label for="email-field" class="forms-contest__label forms-contest__label--contacts">Адрес почты</label>
+            <input class="forms-contest__input forms-contest__input--contacts" type="email" id="email-field" name="email" placeholder="Введите почту*" required>
           </div>
         </fieldset>
 
-        <fieldset class="forms-contest__container">
+        <fieldset class="forms-contest__container forms-contest__container--app">
           <legend class="forms-contest__legend">С каким приложением путешествовали?</legend>
           <input class="forms-contest__radio forms-contest__radio--checked" type="radio" name="type" value="iOS" id="iOS-radio" checked>
           <label for="iOS-radio" class="forms-contest__label">Pink для iOS</label>
@@ -117,7 +118,7 @@
           <label for="windows-radio" class="forms-contest__label">Windows Phone</label>
         </fieldset>
 
-        <div class="forms-contest__container">
+        <div class="forms-contest__container forms-contest__container--emotions">
           <label for="desc-field" class="forms-contest__label forms-contest__label--textarea">Опишите свои эмоции</label>
           <textarea class="forms-contest__textarea" name="desc" placeholder="Можно прям в красках, не стесняясь в выражениях" id="desc-field"></textarea>
         </div>
