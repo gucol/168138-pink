@@ -1,5 +1,42 @@
 .page-header {
-  background-color: #283645;
+  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.page-header__title {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 20px 82px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+
+  &--form {
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 70px 20px 139px;
+    font-size: 50px;
+    line-height: 60px;
+
+    &--form {
+      max-width: 485px;
+      padding-bottom: 79px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .container();
+    padding-top: 173px;
+    padding-bottom: 101px;
+
+    &--form {
+      max-width: 748px;
+    }
+  }
 }
 
 .page-header__inner {
