@@ -1,5 +1,6 @@
 .upload {
-  padding-top: 25px;
+  padding-top: 10px;
+  background-color: #fff;
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
@@ -12,28 +13,29 @@
 
 .upload__slogan {
   display: inline-block;
-  text-align: center;
   max-width: 200px;
+  margin-bottom: 43px;
+  text-align: center;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
 
   @media (min-width: @tablet-width) {
     max-width: 450px;
+    margin-top: 35px;
     margin-bottom: 70px;
     font-size: 18px;
     line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 2px;
+    margin-top: 4px;
     margin-bottom: 67px;
   }
 }
 
 .upload__form {
-  padding: 20px;
-  padding-bottom: 40px;
+  padding: 20px 20px 40px;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
@@ -43,6 +45,11 @@
     padding: 0;
     padding-top: 55px;
     padding-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -55,6 +62,7 @@
 }
 
 .upload__img {
+  width: 100%;
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
@@ -63,5 +71,5 @@
 }
 
 .upload__btn {
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
