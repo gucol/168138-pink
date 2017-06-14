@@ -5,113 +5,144 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initail-scale=1">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "img/help/pink-photo-mobile.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 660px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/help/pink-photo-tablet.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 960px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/help/pink-photo-desktop.jpg" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="http://placehold.it/75x25" alt="Логотип проекта Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggler">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a>Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__inner">
+        <a class="page-header__logo" href="index.html">
+          <img src="http://placehold.it/80x25" alt="Логотип проекта Pink">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggler">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a>Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </nav>
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+      </div>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
-      <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-
+      <div class="page-main__text-wrapper">
+        <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
       <section class="posts">
         <h2 class="posts__title posts__title--hidden">Публикации пользователей</h2>
 
-        <article class="post">
+        <article class="post post--panorama">
           <a class="post__link" href="#">
             <img class="post__panorama" src="http://placehold.it/320x135" alt="Панорама дня">
           </a>
-          <div class="post__desc">
+          <div class="post__desc post__desc--panorama">
             <span class="post__user-name">Анна</span>
             <span class="post__time">(5 минут назад)</span>
             <h3 class="post__title">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</h3>
-            <span class="post__likes">Нравится: 215</span>
+            <span class="post__likes post__likes--panorama">Нравится: 215</span>
           </div>
         </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
-          </a>
-          <div class="post__desc">
-            <span class="post__user-name">Левон</span>
-            <span class="post__time">(5 часов назад)</span>
-            <h3 class="post__title">Вчера он на луну летал, сегодня в руки к нам попал.</h3>
-            <span class="post__likes">Нравится: 356</span>
-          </div>
-        </article>
+        <div class="post__wrapper">
+          <article class="post">
+            <a href="#" class="post__link">
+              <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </a>
+            <div class="post__desc">
+              <span class="post__user-name">Левон</span>
+              <span class="post__time">(5 часов назад)</span>
+              <h3 class="post__title">Вчера он на луну летал, сегодня в руки к нам попал.</h3>
+              <span class="post__likes">Нравится: 356</span>
+            </div>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
-          </a>
-          <div class="post__desc">
-            <span class="post__user-name">Антон</span>
-            <span class="post__time">(12 часов назад)</span>
-            <h3 class="post__title">Соседи будут рады!</h3>
-            <span class="post__likes">Нравится: 666</span>
-          </div>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </a>
+            <div class="post__desc">
+              <span class="post__user-name">Антон</span>
+              <span class="post__time">(12 часов назад)</span>
+              <h3 class="post__title">Соседи будут рады!</h3>
+              <span class="post__likes">Нравится: 666</span>
+            </div>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
-          </a>
-          <div class="post__desc">
-            <span class="post__user-name">Борис</span>
-            <span class="post__time">(20 часов назад)</span>
-            <h3 class="post__title">Здесь могла быть ваша цитата о высоком и вечном.</h3>
-            <span class="post__likes">Нравится: 215</span>
-          </div>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </a>
+            <div class="post__desc">
+              <span class="post__user-name">Борис</span>
+              <span class="post__time">(20 часов назад)</span>
+              <h3 class="post__title">Здесь могла быть ваша цитата о высоком и вечном.</h3>
+              <span class="post__likes">Нравится: 215</span>
+            </div>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
-          </a>
-          <div class="post__desc">
-            <span class="post__user-name">Сергей</span>
-            <span class="post__time">(25 часов назад)</span>
-            <h3 class="post__title">Самая кубанская в мире!</h3>
-            <span class="post__likes">Нравится: 4</span>
-          </div>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </a>
+            <div class="post__desc">
+              <span class="post__user-name">Сергей</span>
+              <span class="post__time">(25 часов назад)</span>
+              <h3 class="post__title">Самая кубанская в мире!</h3>
+              <span class="post__likes">Нравится: 4</span>
+            </div>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
-          </a>
-          <div class="post__desc">
-            <span class="post__user-name">Максим</span>
-            <span class="post__time">(40 часов назад)</span>
-            <h3 class="post__title">Где снег-то?</h3>
-            <span class="post__likes">Нравится: 150</span>
-          </div>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </a>
+            <div class="post__desc">
+              <span class="post__user-name">Максим</span>
+              <span class="post__time">(40 часов назад)</span>
+              <h3 class="post__title">Где снег-то?</h3>
+              <span class="post__likes">Нравится: 150</span>
+            </div>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
-          </a>
-          <div class="post__desc">
-            <span class="post__user-name">Надежда</span>
-            <span class="post__time">(45 часов назад)</span>
-            <h3 class="post__title">Всем GM и взаимные лайки!</h3>
-            <span class="post__likes">Нравится: 2560</span>
-          </div>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <img class="post__img" src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </a>
+            <div class="post__desc">
+              <span class="post__user-name">Надежда</span>
+              <span class="post__time">(45 часов назад)</span>
+              <h3 class="post__title">Всем GM и взаимные лайки!</h3>
+              <span class="post__likes">Нравится: 2560</span>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="upload">
@@ -122,38 +153,41 @@
         <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
           <img src="http://placehold.it/280x375" alt="Загружаемое изображение" class="upload__img">
 
-          <div class="editor">
-            <button class="editor__btn editor__btn--crop" type="button">Обрезать</button>
-            <input class="editor__range" type="range" min="1" max="10">
+          <div class="upload__container">
+            <div class="editor">
+              <button class="editor__btn editor__btn--crop" type="button">Обрезать</button>
+              <input class="editor__range" type="range" min="1" max="10">
+            </div>
+            <div class="editor">
+              <button type="button" class="editor__btn editor__btn--fill">Залить</button>
+              <input class="editor__range editor__range--hidden" type="range" min="1" max="10">
+            </div>
+            <div class="editor">
+              <button type="button" class="editor__btn editor__btn--contrast">Изменить контраст</button>
+              <input class="editor__range editor__range--hidden" type="range" min="1" max="10">
+            </div>
+            <input type="submit" class="btn btn--upload upload__btn" value="Запостить">
+            <input type="reset" class="btn btn--cancel upload__btn" value="Отмена">
           </div>
 
-          <div class="editor">
-            <button type="button" class="editor__btn editor__btn--fill">Залить</button>
-            <input class="editor__range editor__range--hidden" type="range" min="1" max="10">
-          </div>
-          <div class="editor">
-            <button type="button" class="editor__btn editor__btn--contrast">Изменить контраст</button>
-            <input class="editor__range editor__range--hidden" type="range" min="1" max="10">
-          </div>
-
-          <input type="submit" class="btn btn--upload upload__btn" value="Запостить">
-          <input type="reset" class="btn btn--cancel upload__btn" value="Отмена">
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип проекта Pink">
-      </a>
-      <section class="social-links">
-        <h2 class="social-links__title social-links__title--hidden">Напишите нам в социальные сети</h2>
-        <a href="#" class="social-link social-link--you">youtube</a>
-        <a href="#" class="social-link social-link--fb">facebook</a>
-        <a href="#" class="social-link social-link--tw">twitter</a>
-      </section>
-      <div class="develop">
-        <p class="develop__text">Разработано <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">в HTML Academy</a></p>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img src="http://placehold.it/150x40" alt="Логотип проекта Pink">
+        </a>
+        <section class="social-links">
+          <h2 class="social-links__title social-links__title--hidden">Напишите нам в социальные сети</h2>
+          <a href="#" class="social-link social-link--you">youtube</a>
+          <a href="#" class="social-link social-link--fb">facebook</a>
+          <a href="#" class="social-link social-link--tw">twitter</a>
+        </section>
+        <div class="develop">
+          <p class="develop__text">Разработано <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">в HTML Academy</a></p>
+        </div>
       </div>
     </footer>
   </body>

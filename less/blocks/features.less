@@ -1,37 +1,162 @@
 .features {
-  padding-top: 44px;
+  position: relative;
+  background-color: #f2f2f2;
 }
 
-.features__title--hidden {
-  .visuallyhidden();
+.features__inner {
+  .container();
+  padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 51px;
+  }
+
+    @media (min-width: @desktop-width) {
+    padding-top: 68px;
+    padding-bottom: 55px;
+  }
+}
+
+.features__title {
+
+  &--hidden {
+      .visuallyhidden();
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-right: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 9px;
+  }
+}
+
+.features__research {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding: 84px 35px 60px 330px;
+  }
+
+    @media (min-width: @desktop-width) {
+    padding: 105px 35px 60px 376px;
+  }
 }
 
 .features__slogan {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   font-weight: 300;
   font-size: 24px;
+  line-height: 29px;
   color: #283645;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 45px;
+    font-size: 40px;
+
+    &--research {
+      display: block;
+      margin-right: 120px;
+      padding-bottom: 9px;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: #000;
+      text-align: left;
+    }
+  }
 }
 
 .features__slogan-text {
   display: block;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0px 37px;
+    line-height: 47px;
+
+    &:last-child {
+      padding: 0px 45px;
+    }
+
+    &--effect {
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+
+    &:last-child {
+      padding: 0px 200px;
+    }
+  }
 }
 
 .features__list {
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 325px;
+  padding: 45px 35px 290px;
   list-style: none;
-  background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 107%;
+  background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 110%;
   background-size: 160px auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 78px 20px 20px 330px;
+    background: #f2f2f2 url("../img/iphone-screen-mobile@1x.png") no-repeat 5% -18%;
+    background-size: auto 545px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 28px;
+    background: none;
+  }
 }
 
 .features__item {
-  max-width: 250px;
-  padding-bottom: 40px;
+  max-width: 280px;
+  margin-bottom: 31px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 295px;
+    margin-bottom: 34px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 360px 30px 10px;
+
+    &:first-child {
+      background: url("../img/iphone-screen-mobile@1x.png") 48% 0% no-repeat;
+      background-size: auto 391px;
+    }
+
+    &:nth-child(2) {
+      background: url("../img/iphone-screen-mobile@1x.png") 48% 0% no-repeat;
+      background-size: auto 391px;
+    }
+
+    &:nth-child(3) {
+      background: url("../img/iphone-screen-mobile@1x.png") 48% 0% no-repeat;
+      background-size: auto 391px;
+    }
+  }
 }
 
 .features__subtitle {
@@ -39,9 +164,56 @@
   font-size: 18px;
   line-height: 24px;
   color: #000;
+
+  @media (min-width: @desktop-width) {
+    max-width: 240px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
 }
 
 .features__text {
+  margin-top: 12px;
   font-size: 14px;
+  letter-spacing: -0.6px;
   color: #283645;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+
+    &--effect {
+      padding-bottom: 23px;
+    }
+  }
+}
+
+.features__link {
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856;
+  }
+
+    @media (min-width: @desktop-width) {
+    display: block;
+    padding-top: 22px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    color: #d22856;
+  }
 }

@@ -1,17 +1,55 @@
 .downloads {
-  padding-top: 170px;
-  padding-bottom: 30px;
-  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% -2%;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  background: inherit;
+  //background-color: #1d2631;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
-.downloads__title--hidden {
-  .visuallyhidden();
+.downloads__title {
+
+  &--hidden {
+    .visuallyhidden();
+    }
+}
+
+.downloads__slogan {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0;
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 25px;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .downloads__btn {
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin: 27px 0 0;
+  }
 }
 
 .downloads__icon {
@@ -19,10 +57,60 @@
 }
 
 .downloads__text {
-  padding-top: 100px;
+  margin: 0;
+  padding-top: 78px;
   padding-left: 44px;
   padding-right: 44px;
   font-weight: 300;
   font-size: 14px;
-  color: #fff;
+  line-height: 24px;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 107px;
+    font-size: 18px;
+    letter-spacing: -0.7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 147px;
+  }
+}
+
+.downloads__img {
+  order: -1;
+  width: 250px;
+  height: 288px;
+  padding-top: 107px;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.downloads__inner {
+  padding: 28px 0px 31px;
+  background-color: #1d2631;
+
+  @media (min-width: @tablet-width) {
+    background-color: inherit;
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin-left: 20px;
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+    margin-right: 45px;
+    padding-top: 112px;
+    padding-bottom: 122px;
+  }
 }
