@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: 17px 35px 13px;
+  padding: 14px 35px 17px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -8,6 +8,7 @@
   text-align: center;
   background: none;
   border-style: solid;
+  border-width: 3px;
   border-radius: 70px;
 
     &--upload {
@@ -37,7 +38,20 @@
       border-color: #dddfe0;
     }
 
-    &--send,
+    &--send {
+      min-width: 280px;
+      padding: 22px 45px 23px;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #2aab6d;
+      border: none;
+      border-radius: 5px;
+
+      @media (min-width: @tablet-width) {
+        padding: 22px 57px 23px;
+      }
+    }
+
     &--popup {
       min-width: 280px;
       padding: 20px 45px 22px;
