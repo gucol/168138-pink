@@ -1,6 +1,9 @@
 .page-header {
-  .container();
   .clearfix();
+
+  @media (min-width: @desktop-width) {
+    .container();
+  }
 }
 
 .page-header__title--hidden {
