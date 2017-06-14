@@ -2,7 +2,7 @@
   background-color: #fff;
 }
 
-.forms-contest__wrapper {
+.forms-contest__content {
   .container();
 
   @media (min-width: @tablet-width) {
@@ -308,12 +308,6 @@
       flex-wrap: wrap;
       margin-bottom: 24px;
     }
-
-    &:last-child {
-      order: 3;
-      justify-content: space-between;
-      align-items: baseline;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -323,6 +317,20 @@
       max-width: 375px;
       margin-bottom: 0;
     }
+  }
+}
+
+.forms-contest__footer {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    order: 3;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 
