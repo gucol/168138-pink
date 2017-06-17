@@ -1,6 +1,9 @@
 .upload {
-  padding-top: 10px;
+  padding-top: 3px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
@@ -12,7 +15,6 @@
 }
 
 .upload__slogan {
-  display: inline-block;
   max-width: 200px;
   margin-bottom: 43px;
   text-align: center;
@@ -35,11 +37,12 @@
 }
 
 .upload__form {
+  display: flex;
+  flex-direction: column;
   padding: 20px 20px 40px;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
@@ -54,10 +57,12 @@
 }
 
 .upload__container {
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
   }
 }
 
