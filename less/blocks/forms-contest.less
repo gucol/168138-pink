@@ -21,6 +21,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
   }
 }
 
@@ -45,12 +46,13 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+    padding-bottom: 14px;
     order: -2;
   }
 
   @media (min-width: @desktop-width) {
     flex-basis: 445px;
-    padding-top: 15px;
+    padding-top: 9px;
   }
 }
 
@@ -61,16 +63,19 @@
 
   @media (min-width: @tablet-width) {
     order: 1;
-    margin-bottom: 23px;
-    padding-bottom: 27px;
+    margin-bottom: 65px;
+    padding-top: 29px;
+    padding-bottom: 21px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
   }
 
   @media (min-width: @desktop-width) {
     flex-basis: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 30px;
-    margin-bottom: 28px;
+    margin: 0 10px 65px;
+    padding: 34px 20px 30px;
   }
 }
 
@@ -80,15 +85,18 @@
 
   @media (min-width: @tablet-width) {
     order: 0;
-    margin-bottom: 48px;
+    margin-bottom: 56px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+    border: 2px solid #e5e5e5;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     flex-basis: 100%;
     justify-content: space-between;
-    margin-bottom: 50px;
-    padding: 6px 68px 8px;
+    margin: 30px 10px 65px;
+    padding: 42px 58px 0px;
   }
 }
 
@@ -99,16 +107,21 @@
 
   @media (min-width: @tablet-width) {
     order: -1;
-    margin-bottom: 39px;
+    margin-bottom: 34px;
     margin-top: 5px;
+    padding-top: 29px;
     padding-bottom: 35px;
     background-color: #fff;
     border: 2px solid #e5e5e5;
   }
 
   @media (min-width: @desktop-width) {
-    flex-basis: 444px;
+    flex-basis: 430px;
+    margin-top: 16px;
+    margin-right: 10px;
     padding: 0;
+    padding-top: 39px;
+    padding-bottom: 37px;
   }
 }
 
@@ -117,11 +130,16 @@
 
   @media (min-width: @tablet-width) {
     order: 2;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
+    padding-top: 0;
+    border: 2px solid #e5e5e5;
   }
 
   @media (min-width: @desktop-width) {
     flex-basis: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 64px;
   }
 }
 
@@ -151,6 +169,7 @@
     position: static;
 
     &--contacts {
+      clip-path: inherit;
       position: relative;
       min-width: 200px;
       min-height: 20px;
@@ -165,6 +184,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    position: absolute;
     margin-left: 0;
 
     &--contacts {
@@ -173,7 +193,11 @@
     }
 
     &--app {
-      margin-bottom: 33px;
+      top: -10px;
+    }
+
+    &--adventure {
+      top: -12px;
     }
   }
 }
@@ -211,8 +235,29 @@
 
     &--contacts {
       order: 1;
-      margin-left: 87px;
+      margin-left: 77px;
       margin-top: 10px;
+    }
+
+    &--name {
+      margin-top: 31px;
+      margin-right: 17px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+    &--name {
+      margin-left: 9px;
+    }
+
+    &--contacts {
+      margin-top: -3px;
+      margin-left: 19px;
+    }
+
+    &--last {
+      margin-top: 9px;
     }
   }
 }
@@ -227,7 +272,7 @@
   text-transform: inherit;
 
   @media (min-width: @tablet-width) {
-    margin-left: 125px;
+    margin-left: 117px;
     margin-top: 20px;
     margin-bottom: 32px;
     font-size: 18px;
@@ -250,14 +295,15 @@
   text-transform: inherit;
 
   @media (min-width: @tablet-width) {
-    margin-left: 125px;
+    margin-left: 117px;
     margin-top: 20px;
     margin-bottom: 25px;
     font-size: 18px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 136px;
+    margin-left: 131px;
+    margin-bottom: 24px;
   }
 }
 
@@ -275,7 +321,7 @@
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
-    margin-bottom: 52px;
+    margin-bottom: 39px;
     padding: 15px 21px;
     font-weight: 400;
 
@@ -284,6 +330,21 @@
       max-width: 500px;
       margin: 0px auto;
       padding: 22px 19px;
+    }
+
+    &--name {
+      margin-top: 13px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+    &--name {
+      margin-bottom: 40px;
+    }
+
+    &--last {
+      margin-bottom: 0;
     }
   }
 }
@@ -304,16 +365,16 @@
     min-width: 500px;
     min-height: 193px;
     margin: auto;
-    margin-top: 32px;
-    margin-bottom: 55px;
+    margin-top: 15px;
+    margin-bottom: 51px;
     padding: 15px 19px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 820px;
     min-height: 128px;
-    margin-top: 29px;
-    margin-bottom: 45px;
+    margin-top: 12px;
+    margin-bottom: 44px;
   }
 }
 
