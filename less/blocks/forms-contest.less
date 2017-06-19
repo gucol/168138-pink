@@ -213,16 +213,30 @@
 
     &--contacts {
       clip-path: inherit;
-      position: relative;
+      clip: inherit;
+      position: absolute;
+      top: -55px;
+      left: 187px;
       min-width: 200px;
       min-height: 20px;
-      margin-bottom: 30px;
-      margin-top: 11px;
-      margin-left: 217px;
+      padding: 0px 21px;
+      background-color: #fff;
+    }
+
+    &--app {
+      position: absolute;
+      top: -46px;
+      left: 126px;
+      padding: 0px 21px;
+      background-color: #fff;
     }
 
     &--adventure {
-      margin-left: 129px;
+      position: absolute;
+      top: -29px;
+      left: 88px;
+      padding: 0px 21px;
+      background-color: #fff;
     }
   }
 
@@ -231,16 +245,23 @@
     margin-left: 0;
 
     &--contacts {
+      position: absolute;
+      top: -52px;
+      left: 289px;
       margin-bottom: 24px;
       margin-top: 0px;
     }
 
     &--app {
-      top: -10px;
+      top: -48px;
+      min-width: 362px;
+      left: 28px;
+      padding: 0px 5px;
     }
 
     &--adventure {
-      top: -12px;
+      top: -44px;
+      left: 240px;
     }
   }
 }
@@ -256,6 +277,7 @@
   line-height: 30px;
   color: #d22856;
   text-align: left;
+  text-transform: lowercase;
 
   &--contacts {
     margin-bottom: 6px;
@@ -286,6 +308,14 @@
       margin-top: 31px;
       margin-right: 17px;
     }
+
+    &--textarea {
+      position: absolute;
+      top: -16px;
+      left: 206px;
+      padding: 0 10px;
+      background-color: #fff;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -306,7 +336,7 @@
 }
 
 .forms-contest__checkbox + .forms-contest__label {
-  margin-left: 70px;
+  margin-left: 73px;
   margin-top: 37px;
   margin-bottom: 15px;
   text-align: left;
@@ -329,7 +359,7 @@
 }
 
 .forms-contest__radio + .forms-contest__label {
-  margin-left: 76px;
+  margin-left: 73px;
   margin-top: 33px;
   margin-bottom: 12px;
   text-align: left;
@@ -355,7 +385,7 @@
   width: 100%;
   height: 63px;
   margin-bottom: 15px;
-  padding: 23px 28px;
+  padding: 23px 25px;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
@@ -393,6 +423,7 @@
 }
 
 .forms-contest__textarea {
+  font-family: inherit;
   box-sizing: border-box;
   min-width: 280px;
   min-height: 200px;
@@ -474,6 +505,10 @@
   line-height: 30px;
   color: #283645;
   text-transform: uppercase;
+
+  &--close {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     max-width: 300px;
