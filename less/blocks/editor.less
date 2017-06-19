@@ -1,9 +1,77 @@
 .editor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   min-height: 48px;
+  margin-bottom: 29px;
+  background: #f2f2f2;
 
   @media (min-width: @tablet-width) {
     min-height: 86px;
+    max-width: 320px;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 415px;
+  }
+}
+
+.editor__label {
+  order: 1;
+  min-width: 80px;
+  min-height: 65px;
+  font-size: 0;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+    align-self: flex-start;
+    min-width: 25px;
+    min-height: 25px;
+    margin-left: 45px;
+    margin-top: 7px;
+    outline: 1px dotted red;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-right: 48px;
+    min-width: 45px;
+    min-height: 45px;
+  }
+}
+
+.editor__content {
+  order: 100;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    order: 0;
+    width: 200px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
+    padding-bottom: 0;
+  }
+}
+
+.editor__input[type="radio"] {
+  display: none;
+}
+
+.editor__input[type="radio"]:checked + .editor__label {
+  background: pink;
+}
+
+.editor__input[type="radio"]:checked + .editor__label + .editor__content {
+  display: flex;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #dddfe0;
 }
 
 .editor__btn {
@@ -13,8 +81,11 @@
 
 .editor__range {
   min-width: 240px;
+  margin: 0 auto;
+  padding: 20px 0px;
 
-  &--hidden {
-    .visuallyhidden();
+  @media (min-width: @tablet-width) {
+    min-width: 200px;
+    padding: 15px;
   }
 }
