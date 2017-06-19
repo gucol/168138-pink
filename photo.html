@@ -155,21 +155,27 @@
 
           <div class="upload__container">
             <div class="editor">
-              <button class="editor__btn editor__btn--crop" type="button">Обрезать</button>
-              <input class="editor__range" type="range" min="1" max="10">
-            </div>
-            <div class="editor">
-              <button type="button" class="editor__btn editor__btn--fill">Залить</button>
-              <input class="editor__range editor__range--hidden" type="range" min="1" max="10">
-            </div>
-            <div class="editor">
-              <button type="button" class="editor__btn editor__btn--contrast">Изменить контраст</button>
-              <input class="editor__range editor__range--hidden" type="range" min="1" max="10">
+                <input type="radio" class="editor__input" name="editor" id="tabone" checked="checked">
+                <label for="tabone" class="editor__label editor__label--crop">Обрезать</label>
+                <div class="editor__content">
+                  <input class="editor__range" type="range" min="1" max="10">
+                </div>
+
+                <input type="radio" class="editor__input" name="editor" id="tabtwo">
+                <label for="tabtwo" class="editor__label editor__btn--fill">Залить</label>
+                <div class="editor__content">
+                  <input class="editor__range" type="range" min="1" max="10">
+                </div>
+
+                <input type="radio" class="editor__input" name="editor" id="tabthree">
+                <label for="tabthree" class="editor__label editor__btn--contrast">Изменить контраст</label>
+                <div class="editor__content">
+                  <input class="editor__range" type="range" min="1" max="10">
+                </div>
             </div>
             <input type="submit" class="btn btn--upload upload__btn" value="Запостить">
             <input type="reset" class="btn btn--cancel upload__btn" value="Отмена">
           </div>
-
         </form>
       </section>
     </main>
