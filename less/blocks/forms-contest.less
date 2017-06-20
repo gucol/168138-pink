@@ -274,6 +274,7 @@
 .forms-contest__label {
   margin-left: 24px;
   margin-bottom: 7px;
+  padding: 0px;
   line-height: 30px;
   color: #d22856;
   text-align: left;
@@ -339,6 +340,7 @@
   margin-left: 73px;
   margin-top: 37px;
   margin-bottom: 15px;
+  padding: 0px;
   text-align: left;
   line-height: 30px;
   color: #283645;
@@ -359,7 +361,7 @@
 }
 
 .forms-contest__radio + .forms-contest__label {
-  margin-left: 73px;
+  margin-left: 44px;
   margin-top: 33px;
   margin-bottom: 12px;
   text-align: left;
@@ -534,4 +536,75 @@
   @media (min-width: @desktop-width) {
     margin-left: 10px;
   }
+}
+
+.forms-contest__checkbox,
+.forms-contest__radio {
+  display: none;
+}
+
+.forms-contest__label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.forms-contest__label--checkbox:before {
+    content: '';
+    position: absolute;
+    left: -69px;
+    top: -4px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background: #fff;
+    border-radius: 2px;
+    }
+
+.forms-contest__label--radio:before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.forms-contest__checkbox + .forms-contest__label--checkbox:after,
+.forms-contest__checkbox:checked + .forms-contest__label--checkbox:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -59px;
+  width: 19px;
+  height: 7px;
+  border: 2px solid #d22856;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+.forms-contest__radio + .forms-contest__label--radio:after,
+.forms-contest__radio:checked + .forms-contest__label--radio:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -28px;
+  width: 15px;
+  height: 15px;
+  border-radius: 13px;
+  background: #d22856;
+}
+
+.forms-contest__checkbox + .forms-contest__label:after,
+.forms-contest__radio + .forms-contest__label:after {
+  opacity: 0;
+}
+
+.forms-contest__checkbox:checked + .forms-contest__label:after,
+.forms-contest__radio:checked + .forms-contest__label:after {
+  opacity: 1;
 }
