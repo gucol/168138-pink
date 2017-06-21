@@ -48,7 +48,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 660px;
-    height: 511px;
+    height: 509px;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,7 +61,7 @@
   max-width: 280px;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 17px 18px 21px;
+  padding: 15px 18px 21px;
   background-color: #f2f2f2;
   color: #283645;
 
@@ -70,11 +70,11 @@
     max-width: 300px;
     min-height: 83px;
     margin: 0;
-    padding: 22px 28px 50px;
+    padding: 21px 28px 49px;
 
     &--panorama {
       max-width: 620px;
-      padding: 21px 28px 13px;
+      padding: 21px 28px 15px;
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -130,8 +130,8 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    bottom: 23px;
-    left: -2px;
+    bottom: 20px;
+    left: -6px;
 
     &--panorama {
       position: absolute;
@@ -139,6 +139,15 @@
       left: 441px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+
+    &--panorama {
+      top: 25px;
+      left: 756px;
+    }
+  }
+
 }
 
 .post__wrapper {
