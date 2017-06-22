@@ -58,9 +58,19 @@
       <section class="posts">
         <h2 class="posts__title posts__title--hidden">Публикации пользователей</h2>
 
-        <article class="post post--panorama">
+        <article>
           <a class="post__link" href="#">
-            <img class="post__panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+            <picture class="post__panorama">
+              <source media="(min-width: 960px)"
+                srcset="img/panorama-desktop@1x.jpg 1x,
+                        img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/panorama-tablet@1x.jpg 1x,
+                        img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@2x.jpg 2x"
+                alt="Панорама дня" class="post post--panorama">
+            </picture>
           </a>
           <div class="post__desc post__desc--panorama">
             <span class="post__user-name">Анна</span>
@@ -73,7 +83,17 @@
         <div class="post__wrapper">
           <article class="post">
             <a href="#" class="post__link">
-              <img class="post__img" src="img/photo-1-mobile@1x.jpg" alt="Фотография пользователя">
+              <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-1-desktop@1x.jpg 1x,
+                        img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-1-tablet@1x.jpg 1x,
+                        img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg"
+                srcset="img/photo-1-mobile@2x.jpg 2x"
+                alt="Фотография пользователя" class="post__img">
+              </picture>
             </a>
             <div class="post__desc">
               <span class="post__user-name">Левон</span>
@@ -85,7 +105,17 @@
 
           <article class="post">
             <a href="#" class="post__link">
-              <img class="post__img" src="img/photo-2-mobile@1x.jpg" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-2-desktop@1x.jpg 1x,
+                          img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-2-tablet@1x.jpg 1x,
+                          img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile@1x.jpg"
+                  srcset="img/photo-2-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя" class="post__img">
+              </picture>
             </a>
             <div class="post__desc">
               <span class="post__user-name">Антон</span>
@@ -97,7 +127,17 @@
 
           <article class="post">
             <a href="#" class="post__link">
-              <img class="post__img" src="img/photo-3-mobile@1x.jpg" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-3-desktop@1x.jpg 1x,
+                          img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-3-tablet@1x.jpg 1x,
+                          img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile@1x.jpg"
+                  srcset="img/photo-3-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя" class="post__img">
+              </picture>
             </a>
             <div class="post__desc">
               <span class="post__user-name">Борис</span>
@@ -109,7 +149,17 @@
 
           <article class="post">
             <a href="#" class="post__link">
-              <img class="post__img" src="img/photo-4-mobile@1x.jpg" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-4-desktop@1x.jpg 1x,
+                          img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-4-tablet@1x.jpg 1x,
+                          img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/photo-4-mobile@1x.jpg"
+                  srcset="img/photo-4-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя" class="post__img">
+              </picture>
             </a>
             <div class="post__desc">
               <span class="post__user-name">Сергей</span>
@@ -121,7 +171,17 @@
 
           <article class="post">
             <a href="#" class="post__link">
-              <img class="post__img" src="img/photo-5-mobile@1x.jpg" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-5-desktop@1x.jpg 1x,
+                          img/photo-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-5-tablet@1x.jpg 1x,
+                          img/photo-5-tablet@2x.jpg 2x">
+                <img src="img/photo-5-mobile@1x.jpg"
+                  srcset="img/photo-5-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя" class="post__img">
+              </picture>
             </a>
             <div class="post__desc">
               <span class="post__user-name">Максим</span>
@@ -133,7 +193,17 @@
 
           <article class="post">
             <a href="#" class="post__link">
-              <img class="post__img" src="img/photo-6-mobile@1x.jpg" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/photo-6-desktop@1x.jpg 1x,
+                          img/photo-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)"
+                  srcset="img/photo-6-tablet@1x.jpg 1x,
+                          img/photo-6-tablet@2x.jpg 2x">
+                <img src="img/photo-6-mobile@1x.jpg"
+                  srcset="img/photo-6-mobile@2x.jpg 2x"
+                  alt="Фотография пользователя" class="post__img">
+              </picture>
             </a>
             <div class="post__desc">
               <span class="post__user-name">Надежда</span>
@@ -151,7 +221,17 @@
 
 
         <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
-          <img src="img/photo-7-mobile@1x.jpg" alt="Загружаемое изображение" class="upload__img">
+          <picture>
+            <source media="(min-width: 960px)"
+              srcset="img/photo-7-desktop@1x.jpg 1x,
+                      img/photo-7-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photo-7-tablet@1x.jpg 1x,
+                      img/photo-7-tablet@2x.jpg 2x">
+            <img src="img/photo-7-mobile@1x.jpg"
+              srcset="img/photo-7-mobile@2x.jpg 2x"
+              alt="Фотография пользователя" class="post__img">
+          </picture>
 
           <div class="upload__container">
             <div class="editor">

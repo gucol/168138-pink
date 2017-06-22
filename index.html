@@ -57,7 +57,17 @@
             <a href="#" class="downloads__icon">Скачать приложение для Windows</a>
             <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-          <img src="img/iphone-hand-mobile@1x.png" alt="Превью приложения" class="downloads__img">
+          <picture>
+            <source media="(min-width: 960px)"
+              srcset="img/iphone-hand-desktop@1x.png 1x,
+                      img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/iphone-hand-tablet@1x.png 1x,
+                      img/iphone-hand-tablet@2x.png 2x">
+            <img src="img/iphone-hand-mobile@1x.png"
+              srcset="img/iphone-hand-mobile@2x.png 2x"
+              alt="Превью приложения" class="downloads__img">
+          </picture>
         </section>
       </div>
 
