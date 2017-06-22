@@ -5,11 +5,16 @@
   margin-bottom: 20px;
   text-align: left;
 
+  &--panorama {
+    margin: 0;
+  }
+
   @media (min-width: @tablet-width) {
     max-width: 300px;
 
     &--panorama {
       max-width: 1200px;
+      height: 510px;
       margin-bottom: 50px;
     }
   }
@@ -19,6 +24,7 @@
 
     &--panorama {
       width: 100%;
+      height: 506px;
       margin-bottom: 50px;
     }
   }
@@ -64,7 +70,12 @@
   margin-right: 20px;
   padding: 15px 18px 21px;
   background-color: #f2f2f2;
+  text-align: left;
   color: #283645;
+
+  &--panorama {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -78,6 +89,7 @@
       padding: 21px 28px 15px;
       margin-left: 20px;
       margin-right: 20px;
+      margin-bottom: 50px;
     }
   }
 
@@ -88,7 +100,7 @@
       box-sizing: border-box;
       max-width: 940px;
       padding: 21px 28px 13px;
-      margin: 0 auto;
+      margin: 0 auto 50px;
     }
   }
 }
