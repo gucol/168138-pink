@@ -36,7 +36,14 @@
     <header class="page-header">
       <div class="page-header__inner">
         <a class="page-header__logo" href="index.html">
-          <img src="http://placehold.it/80x25" alt="Логотип проекта Pink">
+          <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)"
+                srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg"
+                alt="Логотип проекта Pink">
+          </picture>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggler">Открыть меню</button>
@@ -236,19 +243,19 @@
           <div class="upload__container">
             <div class="editor">
                 <input type="radio" class="editor__input" name="editor" id="tabone" checked="checked">
-                <label for="tabone" class="editor__label editor__label--crop">Обрезать</label>
+                <label for="tabone" class="editor__label editor__label--crop">Обрезать<img alt="" width="48" src="img/icon-editor-crop.svg" class="editor__img editor__img--crop"></label>
                 <div class="editor__content">
                   <input class="editor__range" type="range" min="1" max="10">
                 </div>
 
                 <input type="radio" class="editor__input" name="editor" id="tabtwo">
-                <label for="tabtwo" class="editor__label editor__btn--fill">Залить</label>
+                <label for="tabtwo" class="editor__label editor__label--fill">Залить<img alt="" width="48" src="img/icon-editor-fill.svg" class="editor__img editor__img--fill"></label>
                 <div class="editor__content">
                   <input class="editor__range" type="range" min="1" max="10">
                 </div>
 
                 <input type="radio" class="editor__input" name="editor" id="tabthree">
-                <label for="tabthree" class="editor__label editor__btn--contrast">Изменить контраст</label>
+                <label for="tabthree" class="editor__label editor__label--contrast">Изменить контраст<img alt="" width="32" src="img/icon-editor-contrast.svg" class="editor__img editor__img--contrast"></label>
                 <div class="editor__content">
                   <input class="editor__range" type="range" min="1" max="10">
                 </div>
